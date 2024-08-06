@@ -1,0 +1,82 @@
+# _config.yml
+
+# Site settings
+title: Sumit Gohil's Portfolio
+description: A portfolio showcasing my work and projects.
+url: https://sumitflutter.github.io
+baseurl: "" # Set to your repository name if it's not the user/org site, e.g., /my-repo
+author:
+  name: Sumit Gohil
+  email: gohilsumit142@gmail.com
+
+# Build settings
+markdown: kramdown
+theme: minima # You can change the theme to any Jekyll theme you like
+
+# Optional: Customize the theme
+# Minima settings
+minima:
+  icons: true
+  # Uncomment the following line to enable the search feature if the theme supports it
+  # search: true
+
+# Social media links
+social_links:
+  github: https://github.com/sumitflutter
+  linkedin: https://www.linkedin.com/in/sumit-gohil-5113742b6
+  Instagram: https://www.instagram.com/
+  # Add other social media profiles if needed
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Projects
+    url: /projects
+  - title: Contact
+    url: /contact
+
+# Plugins (if any)
+plugins:
+  - jekyll-feed
+  # Add any other plugins you need
+
+# Exclude files or directories from being processed by Jekyll
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Include files or directories to ensure they're processed by Jekyll
+include:
+  - _pages
+  - _projects
+
+# Permalinks configuration
+permalink: pretty
+
+# Layout settings (if you use custom layouts)
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+# SEO settings
+seo:
+  title: "Sumit Gohil's Portfolio"
+  description: "Sumit Gohil is an Mobile Application Devloper"
+  keywords: "portfolio, Sumit Flutter, developer, projects"
+
+# Analytics (Google Analytics or other services)
+# Uncomment and set the analytics_id if you want to use Google Analytics
+# analytics:
+#   google: "YOUR_GOOGLE_ANALYTICS_ID"
